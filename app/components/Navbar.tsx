@@ -90,9 +90,10 @@ function Navbar() {
             ease: "linear",
         }}
         >
-        <Button className='hidden sm:flex ' asChild>
-            <a  href="/RESUME.docx" target={"_blank"} className="relative inline-flex items-center justify-start animate-pulse px-6 py-3 
-            overflow-hidden font-medium transition-all bg-red-500 dark:bg-green-500 rounded-xl group ">Resume</a>
+
+        <Button className='hidden sm:flex' asChild>
+            <Link href="/RESUME.docx" target={"_blank"} className="relative inline-flex items-center justify-start animate-pulse px-6 py-3 
+            overflow-hidden font-medium transition-all bg-red-500 dark:bg-green-500 rounded-xl group" download={true}>Resume</Link>
         </Button>
         </motion.div>
         <div className='sm:hidden'><MobileMenu/></div>
