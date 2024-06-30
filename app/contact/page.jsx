@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from "sonner";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import Email from "./Email";
 
 const container = {
   hidden: { opacity: 0 },
@@ -106,65 +107,10 @@ engineering consulting services. <br/>
 Please do not hesitate to contact me by using the contact form on this page.</motion.p>
 </div>
 
-<motion.form
-variants={item}
-initial="hidden"
-animate="show"
-onSubmit={handleSubmit(onSubmit)} className='max-w-lg w-full flex flex-col items-center justify-center space-y-4'>
-      <input 
-            placeholder="Name"
-            type="text" {...register("name", {
-            required: "This field is required!",
-            minLength: {
-            value: 3,
-            message: "Name should be atleast 3 characters long.",
-            },
-          })} 
-          className='w-full border border-red-600 p-2 rounded-md shadow-lg hover:shadow-red-600 dark:border-green-600 dark:hover:shadow-green-600 text-foreground focus:outline-none focus:ring-2 focus:ring-red-500/50'/>
-      {
-      errors.name && <span className='inline-block self-start text-red-500'>{errors.name.message}</span>
-      }
-
-
-      <input type="email" placeholder="Email" {...register("email", { required: "This field is required!" })} 
-      className='w-full border border-red-600 p-2 rounded-md shadow-lg hover:shadow-red-600 dark:border-green-600 dark:hover:shadow-green-600 text-foreground 
-      focus:outline-none focus:ring-2 focus:ring-red-500/50' />
-      {
-      errors.email && <span className='inline-block self-start text-red-500'>{errors.email.message}</span>
-      }
-
-
-      
-      <textarea placeholder="Message"
-      {...register("message", {
-            required: "This field is required!",
-            maxLength: {
-              value: 200,
-              message: "Message should be less than 200 characters",
-            },
-            minLength: {
-              value: 20,
-              message: "Message should be more than 20 characters",
-            },
-          })} 
-      className='w-full border border-red-600 p-2 rounded-md  text-foreground 
-      focus:outline-none focus:ring-2 focus:ring-red-500/50 shadow-2xl hover:shadow-red-600 dark:border-green-600 dark:hover:shadow-green-600'/>
-      {errors.message && (
-          <span className="inline-block self-start text-red-500">
-            {errors.message.message}
-          </span>
-        )}
+<Email/>
 
 
 
-      <input 
-      value="Send your message!"
-      className='px-10 py-4 rounded-md shadow-lg border overflow-hidden border-red-600 border-solid group 
-      bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 
-      hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 
-      relative bg-white dark:bg-gray-900 group-hover:bg-opacity-0 cursor-pointer transition-all duration-500 ease-in-out' 
-      type="submit" />
-</motion.form>
 
 </article>
 </>
