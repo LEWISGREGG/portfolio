@@ -89,7 +89,7 @@ return (
 
 <div className="flex flex-col items-center justify-center space-y-6 w-3/4 mt-16">
 
-<motion.h1 className="text-red-500 dark:text-green-500 font-semibold text-center text-4xl capitalize scroll-px-10"
+<motion.h1 className="text-red-500 dark:text-green-500 font-semibold text-center text-md lg:text-4xl capitalize scroll-px-10"
 variants={container}
 initial="hidden"
 animate="show"

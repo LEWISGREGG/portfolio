@@ -73,11 +73,11 @@ export default function Email() {
 
 return (
   
-  <>
+  <div>
 
   <Toaster richColors={true} />
 
-<article className="relative h-full w-full flex flex-col items-center justify-center space-y-8 mx-auto">
+<article className="relative h-full max-w-7xl flex flex-col items-center justify-center space-y-8 mx-auto">
 
 
 
@@ -142,6 +142,6 @@ onSubmit={handleSubmit(onSubmit)} className='max-w-lg w-full flex flex-col items
 </motion.form>
 
 </article>
-</>
+</div>
   )
 }
