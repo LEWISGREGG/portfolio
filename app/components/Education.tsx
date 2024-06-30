@@ -15,7 +15,7 @@ const education = [
   },
   {
   id: 2,
-  university: 'National University “Yuri Kondratyuk Poltava Polytechnic',
+  university: 'Poltava Polytechnic University',
   city: "Poltava, Ukraine, BSc",
   year: "2010-2014",
   major: "BSc, Construction",
@@ -56,10 +56,10 @@ return (
             key={item.id} className="p-4 my-8 rounded-2xl border border-solid border-r-4 border-emerald-500 border-b-4 flex flex-col 
             items-center sm:items-start bg-slate-50 dark:bg-transparent opacity-40 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out ">
 
-            <h1 className="capitalize font-bold text-2xl text-center">{item.university}</h1>
-            <h1 className="capitalize font-bold text-2xl text-center">{item.city}</h1>
+            <h1 className="capitalize font-bold text-md lg:text-2xl text-center">{item.university}</h1>
+            <h1 className="capitalize font-bold text-md lg:text-2xl text-center">{item.city}</h1>
             <p className="text-bold leading-2 text-center ">{item.year}</p>
-            <span className="decoration-amber-500 underline font-semibold text-xl mb-4 text-black dark:text-gray-200 opacity-100">{item.major}</span>
+            <span className="decoration-amber-500 underline font-semibold text-md lg:text-xl mb-4 text-black dark:text-gray-200 opacity-100">{item.major}</span>
             <a href={item.link} target="_blank" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-green-600 transition duration-300 ease-out border-2 border-green-500 rounded-full shadow-md group">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-green-500 group-hover:translate-x-0 ease">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>

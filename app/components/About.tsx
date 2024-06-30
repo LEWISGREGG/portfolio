@@ -127,7 +127,7 @@ function About() {
     initial="hidden"
     animate="show" 
     exit="hidden" 
-    className="flex flex-col w-full xl:max-w-[68%] h-[280px] md:h-[160px] ">
+    className="flex flex-col w-full xl:max-w-[68%] h-[230px] md:h-[160px] ">
       <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 dark:text-slate-900/60 text-slate-900/50" >
       {aboutData.map((item, itemIndex) => {
         return (
@@ -150,8 +150,8 @@ function About() {
       
       <div className="hidden md:flex"> - </div>
 
-      <div>{item.stage}</div>
-      <div className="flex gap-x-4">
+      
+      <div className="flex gap-x-4"><div>{item.stage}</div>
       {item.icons?.map((icon:any, itemIndex:any) => {
         return (
           <div key={itemIndex} className="text-2xl text-slate-700">

@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { ProjectsCard } from "../lib/interface";
 import { client } from "../lib/sanity";
-import Link from "next/link";
-
+import Transition from "../components/Transition";
 
 
 async function getData() {
@@ -26,7 +25,9 @@ async function getData() {
 export default async function ProjectsPage() {
     const data: ProjectsCard[] = await getData();
 return (
+    
     <section className="max-w-7xl w-full px-4 md:px-8 mx-auto">
+        <Transition/>
         <div className="divide-y divide-slate-200 dark:divide-gray-700">
         <h1 className="text-4xl font-extrabold leading-9 tracking-tight lg:text-5xl pt-5 sm:leading-9 dark:text-slate-100">My projects</h1>
         <p className="text-muted-foreground leading-7 mt-2">Check out my projects</p>

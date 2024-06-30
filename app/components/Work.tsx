@@ -23,23 +23,6 @@ const work = [
     },
 ]
 
-const education = [
-  {
-  id: 3,
-  university: 'Wroclaw University of Science and Technology',
-  city: "Wroclaw, Poland",
-  year: "2015-2017",
-  major: "MSc, Civil Engineering",
-  },
-  {
-  id: 4,
-  university: 'National University “Yuri Kondratyuk Poltava Polytechnic',
-  city: "Poltava, Ukraine, BSc",
-  year: "2010-2014",
-  major: "BSc, Construction",
-  },
-]
-
 
 function Work() {
     const ref = useRef(null);
@@ -71,7 +54,7 @@ return (
             <h1 className="capitalize font-bold text-2xl text-center">{item.name}</h1>
             <p className="text-bold leading-2 text-center ">{item.date}</p>
             <span className="decoration-[#F7AB0A] underline font-semibold text-xl text-black dark:text-gray-200 opacity-100 text-center">{item.username}</span>
-            <p className="text-bold leading-2 w-full">{item.exp}</p>
+            <p className="text-bold text-sm lg:text-md leading-2 w-full">{item.exp}</p>
             <a href={item.link} target="_blank" className="relative mt-4 rounded px-5 py-2.5 overflow-hidden group bg-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300">
             <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
             <span className="relative">Company Website</span>

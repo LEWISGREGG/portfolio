@@ -35,12 +35,20 @@ function Navbar() {
         <motion.div 
         whileHover={{
         scale: 1.05}}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.1 }}
+        whileInView={{ opacity: 1 }}
+        animate={{
+        scale: [1, 1.2, 1.2, 1.3, 1],
+        opacity: [0.1, 0.2, 0.4, 0.6, 0.1, 1.0],
+        
+      }}
         className="col-span-6 flex md:col-span-3 sm:col-span-3"> 
             <Link href="/">
             <Image
             src="https://www.svgrepo.com/show/94528/satellite-dish.svg"
             width={40}
-            className="rounded-full hover:scale-105 cursor-pointer transition-transform duration-500 ease-in-out lg:hidden"
+            className="rounded-full hover:scale-105 ml-8 animate-ping cursor-pointer transition-transform duration-500 ease-in-out lg:hidden"
             height={40}
             alt="logo"
             />
@@ -70,21 +78,20 @@ function Navbar() {
 
         <motion.div
         initial={{
-            y: "20%",
+            x: "10%",
         }}
             animate={{
-            y: "-20%",
+            x: "-10%",
         }}
             transition={{
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 1,
+            duration: 2,
             ease: "linear",
         }}
         >
         <Button className='hidden sm:flex ' asChild>
-            
-            <a  href="/RESUME.docx" target={"_blank"} className="relative inline-flex items-center justify-start px-6 py-3 
+            <a  href="/RESUME.docx" target={"_blank"} className="relative inline-flex items-center justify-start animate-pulse px-6 py-3 
             overflow-hidden font-medium transition-all bg-red-500 dark:bg-green-500 rounded-xl group ">Resume</a>
         </Button>
         </motion.div>

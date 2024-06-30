@@ -73,13 +73,13 @@ return (
     <div className='flex flex-1 xl:gap-x-6'>
     <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after-absolute after:top-0 after:right-0'>
     <div className='text-2xl xl:text-4xl font-extrabold text-red-500 dark:text-emerald-500 mb-2'>
-    <CountUp start={0} end={6} duration={1}/> +
+    <CountUp start={0} end={6} duration={2}/> +
     </div>
     <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of Experience</div>
     </div>
     <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after-absolute after:top-0 after:right-0'>
     <div className='text-2xl xl:text-4xl font-extrabold text-red-500 dark:text-emerald-500 mb-2'>
-    <CountUp start={0} end={3} duration={1}/> +
+    <CountUp start={0} end={3} duration={2}/> +
     </div>
     <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Proffesional Certificates</div>
     </div>

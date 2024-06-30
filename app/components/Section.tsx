@@ -13,9 +13,8 @@ import github from "../../public/github.svg";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-
 const icons = [
-    autodesk, google, tailwind, javascript, esri, microsoft, 
+    autodesk, google, javascript, microsoft, esri, tailwind
 ]
 
 const socialMedia = [
@@ -33,9 +32,7 @@ const socialMedia = [
         username: "@sergio",
         link: "https://github.com/LEWISGREGG"
     },
-
 ]
-
 
 function Section() {
   return (
@@ -87,8 +84,6 @@ function Section() {
             </Button>
             </Card>
             ))}
-
-
             </div>
         </motion.div>
     </div>

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from "sonner";
-import Transition from "../components/Transition";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const container = {
@@ -68,7 +67,6 @@ export default function ContactPage() {
         }
         
 
-
         const onSubmit = (data) => {
           const templateParams = {
             to_name: "Serhio",
@@ -83,8 +81,6 @@ export default function ContactPage() {
 return (
   
   <>
-
-  
 
   <Toaster richColors={true} />
 

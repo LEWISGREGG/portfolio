@@ -23,7 +23,7 @@ function Hero() {
         transition={{ duration:0.5, delay:1 }}
         className="col-span-1 lg:col-span-2 h-full bg-slate-100 hover:bg-slate-200 min-h-[400px] lg:min-h-[300px] rounded-2xl p-8 hover:shadow-[inset_-12px_-8px_40px_#862929bc] transition-all duration-300">
             <h1 className="text-2xl lg:text-4xl font-medium dark:text-amber-500">Serhii Kushnirenko, PE</h1>
-            <h1 className="text-xl lg:text-2xl font-normal mt-3 dark:text-amber-500">
+            <h1 className="text-lg lg:text-2xl font-normal mt-3 dark:text-amber-500">
             <span className="mr-3">{text}</span>
             <Cursor cursorColor="amber"/></h1>
             <a href="mailto:ukrainianscholar@gmail.com" className="relative mt-4 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 dark:bg-green-500 rounded-xl group">
