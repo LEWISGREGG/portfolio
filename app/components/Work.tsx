@@ -33,7 +33,7 @@ function Work() {
     }
 )
 return (
-    <div className="first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between ">
+    <div className="first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col items-center justify-between ">
     <h2 className="uppercase tracking-[14px] text-gray-600 text-2xl dark:text-slate-200 animate-pulse
     font-bold mt-16 w-full text-center md:text-4xl md:mt-24">Experience</h2>
     <div ref={ref} className="w-[100%] mx-auto relative">
@@ -46,7 +46,7 @@ return (
             <motion.div
             initial={{y:90}}
             whileInView={{y:0}}
-            transition={{duration: 0.2, ease:"ease-in-out", type: "spring"}}
+            transition={{duration: 0.4, ease:"ease-in-out", type: "spring"}}
             viewport={{once: true}}
             key={item.id} className="p-4 my-8 rounded-2xl border border-solid border-l-4 shadow-lg hover:shadow-orange-700 border-red-500  border-t-4 flex flex-col 
             items-center sm:items-start bg-slate-50 dark:bg-transparent hover:opacity-90 cursor-pointer transition duration-300 ease-in-out ">
@@ -54,7 +54,7 @@ return (
             <h1 className="capitalize font-bold text-2xl text-center">{item.name}</h1>
             <p className="text-bold leading-2 text-center ">{item.date}</p>
             <span className="decoration-[#F7AB0A] underline font-semibold text-xl text-black dark:text-gray-200 opacity-100 text-center">{item.username}</span>
-            <p className="text-bold text-sm lg:text-md leading-2 w-full">{item.exp}</p>
+            <p className="text-bold text-sm lg:text-lg leading-2 w-full">{item.exp}</p>
             <a href={item.link} target="_blank" className="relative mt-4 rounded px-5 py-2.5 overflow-hidden group bg-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300">
             <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
             <span className="relative">Company Website</span>
