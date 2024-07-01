@@ -32,7 +32,6 @@ async function getGuestBookEntry() {
   return data;
 }
 
-
 export default function GuestbookPage() {
   const currentDate = new Date().toUTCString();
   return (
@@ -54,7 +53,6 @@ export default function GuestbookPage() {
     </section>
   );
 }
-
 
 async function GuestBookEntries() {
   const data = await getGuestBookEntry();
